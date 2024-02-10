@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Iron Paradise Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve our GYM
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input
+        required
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        name="full-name"
+      />
+      <label id="email-label" for="email">Email</label>
+      <input
+        required
+        id="email"
+        type="email"
+        placeholder="Enter your Email"
+        name="email"
+      />
+      <label id="number-label" for="number">Age(optional)</label>
+      <input
+        min="14"
+        max="80"
+        id="number"
+        type="number"
+        placeholder="Age"
+        name="age"
+      />
+      <label>Which option best describes your gym experience?</label>
+      <select id="dropdown">
+        <option name="">Select</option>
+        <option name="beginner">Beginner</option>
+        <option name="Intermediate">Intermediate</option>
+        <option name="Experienced">Experienced</option>
+        <option name="no-preference">Prefer not to say</option>
+      </select>
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <label><input name="recommend" type="radio" />Definitely</label>
+      <label><input name="recommend" type="radio" />Maybe</label>
+      <label><input name="recommend" type="radio" />Not sure</label>
+      <label>What is your favorite part of our gym?</label>
+      <select id="dropdown">
+        <option name="">Select an option</option>
+        <option name="equipment">Equipment</option>
+        <option name="classes">Classes(yoga, HIIT, etc.)</option>
+        <option name="location">Location</option>
+        <option name="atmosphere">Atmosphere</option>
+      </select>
+      <label>What would you like to see improved? (Check all that apply)</label>
+      <label
+        ><input type="checkbox" value="machines" /> Additional machines
+      </label>
+      <label
+        ><input type="checkbox" value="personal-training" /> Personal
+        Training</label
+      >
+      <label><input type="checkbox" value="community" /> Community</label>
+      <label><input type="checkbox" value="Facilities (such as locker rooms, showers, sauna, etc.)" /> Facilities</label>
+      <label>Any comments or suggestions?</label>
+      <textarea placeholder="Enter your comment here..."></textarea>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
